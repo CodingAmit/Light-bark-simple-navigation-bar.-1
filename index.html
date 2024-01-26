@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navbar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Style.css started here-->
+
+    <style>
+        /*Important Linking*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(34 34 34);
+    height: 100px;
+    
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.nav-links li{
+    padding: 10px 20px;
+}
+
+.nav-account-links{
+    display: flex;
+}
+
+.account-list-signup a {
+    font-size: 15px;
+    font-weight: 800;
+    padding: 10px 30px;
+    margin: 5px;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+.account-list-login a {
+    font-size: 15px;
+    font-weight: 800;
+    padding: 10px 30px;
+    margin: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.bg-image{
+    background-image: url(image.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+    </style>
+
+</head>
+<body>
+    
+    <div class="navbar">
+
+        <div class="logo">Coding Amit</div>
+
+        <div class="nav-pages">
+            <ul class="nav-links">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-account">
+            <ul class="nav-account-links">
+                <li class="account-list-signup"><a href="#">SIGN UP</a></li>
+                <li class="account-list-login"><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="bg-image"></div>
+</body>
+</html>
